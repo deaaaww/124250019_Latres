@@ -7,7 +7,7 @@ if (!isset($_SESSION['logged_in'])) {
     exit();
 }
 
-// PROSES CATAT PEMINJAMAN
+
 if (isset($_POST['pinjam'])) {
     $kode_peminjaman = $_POST['kode_peminjaman'];
     $nama_peminjam   = $_POST['nama_peminjam'];
@@ -19,11 +19,10 @@ if (isset($_POST['pinjam'])) {
         (kode_peminjaman, nama_peminjam, judul_buku, tanggal_pinjam, tanggal_kembali, status) 
         VALUES ('$kode_peminjaman', '$nama_peminjam', '$judul_buku', '$tanggal_pinjam', '$tanggal_kembali', 'Dipinjam')");
 
-    // Kurangi stok buku berdasarkan judul_buku
     mysqli_query($koneksi, "UPDATE buku SET stok = stok - 1 WHERE judul_buku = '$judul_buku'");
 }
 
-// PROSES PENGEMBALIAN
+
 if (isset($_GET['kembalikan'])) {
     $id_peminjaman = $_GET['kembalikan'];
 
@@ -77,7 +76,7 @@ if (isset($_GET['kembalikan'])) {
       </ul>
     
         <div class="d-flex keluar">
-                <a href="login.php" class="btn btn-light">
+                <a href="logout.php" class="btn btn-light">
                     <i class="bi bi-box-arrow-right"></i> Keluar
                 </a>
             </div>

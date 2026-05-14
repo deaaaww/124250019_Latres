@@ -1,10 +1,9 @@
-body{
+body {
     background-color: #2d5ecf;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* LOGIN */
-.login{
+.login {
     width: 500px;
     background-color: white;
     padding: 30px;
@@ -12,154 +11,136 @@ body{
     margin: 100px auto;
 }
 
-.log{
+.log {
     text-align: center;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
-.sistem{
+.sistem {
     text-align: center;
     margin-bottom: 25px;
     font-weight: bold;
 }
 
-.submit{
+.submit {
     width: 100%;
 }
 
-.alert-danger{
+.alert-danger {
     text-align: center;
     padding: 5px;
 }
 
-/* NAVBAR */
-.warnaNavbar{
+.warnaNavbar {
     background-color: #2d5ecf;
 }
 
-.pustaka{
+.pustaka {
     font-size: large;
 }
 
-/* HALAMAN */
-.koleksi{
+.koleksi {
     background-color: #e9edf7;
 }
 
-/* JUDUL KOLEKSI */
-.judulKoleksi{
+.judulKoleksi {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #222;
 }
 
-/* JUDUL EDIT */
-.judulEdit{
+.judulEdit {
     text-align: center;
     font-size: 34px;
     font-weight: bold;
-    color: #333;
     margin-bottom: 25px;
 }
 
-/* BUTTON EDIT HAPUS */
-.btn-success,
-.btn-warning{
+.btn-success, .btn-warning {
     width: 75px;
     height: 36px;
-
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
-    border-radius: 8px;
+    border-radius: 7px;
 }
 
-/* FORM */
-.form-label{
-    font-weight: 500;
-    color: #444;
+.form-label {
+    font-weight: 500px;
     margin-bottom: 6px;
 }
 
-.form-control,
-.form-select{
+.form-control, .form-select {
     border-radius: 6px;
     height: 42px;
     font-size: 14px;
 }
 
-/* CARD EDIT */
-.formEdit{
+.formEdit {
     width: 700px;
     margin: 40px auto;
     background-color: white;
     padding: 35px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.8);
 }
 
-/* BUTTON AREA EDIT */
-.formButton{
+.formButton {
     display: flex;
     justify-content: center;
     gap: 12px;
     margin-top: 25px;
 }
 
-.judulPinjam{
+.judulPinjam {
     text-align: center;
     font-size: 42px;
     font-weight: bold;
     margin-bottom: 30px;
-    color: #222;
 }
 
-.tabelPinjam{
+.tabelPinjam {
     width: 90%;
     margin: 0 auto;
 }
 
-.kembali{
+.kembali {
     width: 110px;
     height: 36px;
-
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
     border-radius: 8px;
     font-size: 14px;
 }
 
-.tambahkoleksi{
+.tambahKoleksi {
     font-weight: bold;
 }
 
-.formPinjam{
+.formPinjam {
     width: 100%;
     font-weight: bold;
     text-align: center;
 }
 
-.tombolSubmit{
+.tombolSubmit {
     border-top: none;
     text-align: center;
     gap: 10px;
     padding-bottom: 25px;
 }
 
-.btnKembali{
+.btnKembali {
     background-color: rgba(25, 210, 235, 0.831);
 }
 
-.keluar{
+.keluar {
     margin-right: 15px;
 }
 
-.file{
+.file {
     padding: 0px;
 }

@@ -71,7 +71,7 @@ $buku = mysqli_fetch_assoc($query);
       </ul>
     
         <div class="d-flex keluar">
-                <a href="login.php" class="btn btn-light">
+                <a href="logout.php" class="btn btn-light">
                     <i class="bi bi-box-arrow-right"></i> Keluar
                 </a>
             </div>

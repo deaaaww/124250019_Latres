@@ -7,7 +7,6 @@ if (!isset($_SESSION['logged_in'])) {
     exit();
 }
 
-// PROSES TAMBAH
 if (isset($_POST['tambah'])) {
     $kode_buku  = $_POST['kode_buku'];
     $judul_buku = $_POST['judul_buku'];
@@ -27,7 +26,6 @@ if (isset($_POST['tambah'])) {
     }
 }
 
-/* PROSES HAPUS */
 if (isset($_GET['hapus'])) {
 
     $id = $_GET['hapus'];
@@ -84,7 +82,7 @@ if (isset($_GET['hapus'])) {
       </ul>
     
         <div class="d-flex keluar">
-                <a href="login.php" class="btn btn-light">
+                <a href="logout.php" class="btn btn-light">
                     <i class="bi bi-box-arrow-right"></i> Keluar
                 </a>
             </div>
@@ -106,7 +104,7 @@ if (isset($_GET['hapus'])) {
     </button>
 </div>
 
-    <table class="table table-bordered table-hover">
+    <table class="table table-hover">
         <thead class="table-primary text-center">
             <tr>
                 <th>ID</th>
@@ -160,7 +158,6 @@ window.location.href='koleksiBuku.php?hapus=<?php echo $row['id_buku']; ?>';
     </table>
 </div>
 
-<!-- Modal Tambah -->
 <div class="modal fade" id="modalTambah" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
