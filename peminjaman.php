@@ -7,7 +7,6 @@ if (!isset($_SESSION['logged_in'])) {
     exit();
 }
 
-
 if (isset($_POST['pinjam'])) {
     $kode_peminjaman = $_POST['kode_peminjaman'];
     $nama_peminjam   = $_POST['nama_peminjam'];
@@ -26,18 +25,14 @@ if (isset($_POST['pinjam'])) {
 if (isset($_GET['kembalikan'])) {
     $id_peminjaman = $_GET['kembalikan'];
 
-    // Ambil judul buku
     $data = mysqli_query($koneksi, "SELECT judul_buku FROM peminjaman WHERE id_peminjaman = '$id_peminjaman'");
     $row = mysqli_fetch_assoc($data);
     
     if($row) {
         $judul_buku = $row['judul_buku'];
 
-        // Update status menjadi Dikembalikan
         mysqli_query($koneksi, "UPDATE peminjaman SET status = 'Dikembalikan' WHERE id_peminjaman = '$id_peminjaman'");
         
-
-        // Tambah stok buku
         mysqli_query($koneksi, "UPDATE buku SET stok = stok + 1 WHERE judul_buku = '$judul_buku'");
         
         $_SESSION['sukses'] = "Buku berhasil dikembalikan!";

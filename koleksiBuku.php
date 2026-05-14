@@ -143,12 +143,12 @@ if (isset($_GET['hapus'])) {
                 <td class="text-center">
                     <a href="editBuku.php?id=<?php echo $row['id_buku']; ?>" class="btn btn-success">Edit</a>
                     <button class="btn btn-warning btn-sm aksiBtn" 
-onclick="if(confirm('Yakin hapus <?php echo $row['judul_buku']; ?> ?')) 
-{ 
-window.location.href='koleksiBuku.php?hapus=<?php echo $row['id_buku']; ?>'; 
-}">
-    Hapus
-</button>
+                        onclick="if(confirm('Yakin hapus <?php echo $row['judul_buku']; ?> ?')) 
+                        { 
+                        window.location.href='koleksiBuku.php?hapus=<?php echo $row['id_buku']; ?>'; 
+                        }">
+                            Hapus
+                    </button>
                 </td>
             </tr>
             <?php 
@@ -156,7 +156,7 @@ window.location.href='koleksiBuku.php?hapus=<?php echo $row['id_buku']; ?>';
             ?>
         </tbody>
     </table>
-</div>
+    </div>
 
 <div class="modal fade" id="modalTambah" tabindex="-1">
     <div class="modal-dialog">

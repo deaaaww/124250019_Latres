@@ -80,9 +80,9 @@ if (isset($_POST['pinjam'])) {
                 </div>
 
                 <div class="mb-3">
-                    <label class="form-label">Pilih Buku Tersedia</label>
+                    <label class="form-label">Pilih Buku </label>
                     <select name="judul_buku" class="form-select" required>
-                    <option value="">Pilih Buku</option>
+                    <option value="">Pilih Buku Tersedia</option>
                         <?php
                         $query = mysqli_query($koneksi,
                         "SELECT * FROM buku WHERE stok > 0");
